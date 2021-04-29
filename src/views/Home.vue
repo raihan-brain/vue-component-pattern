@@ -1,4 +1,7 @@
 <template>
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
