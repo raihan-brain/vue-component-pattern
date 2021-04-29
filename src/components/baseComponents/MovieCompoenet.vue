@@ -5,6 +5,14 @@
     <li class="list-group-item">{{ length }}</li>
     <li class="list-group-item">{{ haveSeenMovie }}</li>
   </ul>
+  <slot name="reference"></slot>
+  <ul class="list-group list-group-horizontal">
+    <li class="list-group-item">{{ image }}</li>
+    <li class="list-group-item">{{ title }}</li>
+    <li class="list-group-item">{{ length }}</li>
+    <li class="list-group-item">{{ haveSeenMovie }}</li>
+  </ul>
+  <slot></slot>
 </template>
 
 <script lang="ts">
@@ -31,9 +39,9 @@ export default defineComponent({
       default: 90,
     },
     haveSeenMovie: {
-        type: Boolean,
-        default: false
-    }
+      type: Boolean,
+      default: false,
+    },
   },
 });
 </script>

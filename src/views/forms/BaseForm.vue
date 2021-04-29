@@ -8,7 +8,14 @@
             :length="190"
             :title="'Saving private ryan'"
             :have-seen-movie="true"
-          ></movie-component>
+          >
+            <template v-slot:reference>
+              <p>testing slot</p>
+            </template>
+            <template v-slot:default>
+              <h1>default</h1>
+            </template>
+          </movie-component>
         </div>
       </div>
     </div>
