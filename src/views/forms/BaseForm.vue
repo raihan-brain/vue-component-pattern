@@ -12,6 +12,9 @@
             <template v-slot:reference>
               <p>testing slot</p>
             </template>
+            <template v-slot:hero="slotProps">
+              <h1>{{ slotProps.logo }}</h1>
+            </template>
             <template v-slot:default>
               <h1>default</h1>
             </template>
