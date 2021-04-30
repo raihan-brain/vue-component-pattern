@@ -6,12 +6,7 @@
     <li class="list-group-item">{{ haveSeenMovie }}</li>
   </ul>
   <slot name="reference"></slot>
-  <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">{{ image }}</li>
-    <li class="list-group-item">{{ title }}</li>
-    <li class="list-group-item">{{ length }}</li>
-    <li class="list-group-item">{{ haveSeenMovie }}</li>
-  </ul>
+  <slot name="hero" :logo="logoImage"></slot>
   <slot></slot>
 </template>
 
@@ -42,6 +37,11 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+  },
+  data() {
+    return {
+      logoImage: "Harry potter!!",
+    };
   },
 });
 </script>
